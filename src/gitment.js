@@ -338,6 +338,16 @@ class Gitment {
         comment.reactions.heart--
       })
   }
+
+  uploadIp() {
+    http.post('https://www.animeng.cn:3000/uploadip', {},'')
+    .then(data => {
+      console.log(data)
+    })
+    .catch(e => {
+      alert(e)
+    })
+  }
 }
 
 module.exports = Gitment

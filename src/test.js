@@ -9,6 +9,7 @@ if (!config) {
 const gitment = new Gitment(config)
 
 gitment.render('container')
+gitment.uploadIp()
 
 window.gitment = gitment
 
